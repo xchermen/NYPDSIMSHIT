@@ -1,0 +1,61 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("POLICESIM 🗽 NYC", "Synapse")
+local Tab = Window:NewTab("GAMEPASS GUNS")
+local Section = Tab:NewSection("Guns")
+Section:NewButton("MP5", "ButtonInfo", function()
+
+local args = {
+    [1] = "MP5",
+}
+
+game:GetService("ReplicatedStorage").playerserver.charcustomizer.changespecwep:FireServer(unpack(args))
+wait(1)
+
+game:GetService("ReplicatedStorage").playerserver.charcustomizer.saveapply:FireServer()
+end)
+
+Section:NewButton("GM4A1", "ButtonInfo", function()
+
+local args = {
+    [1] = "GM4A1",
+}
+
+game:GetService("ReplicatedStorage").playerserver.charcustomizer.changespecwep:FireServer(unpack(args))
+wait(1)
+
+game:GetService("ReplicatedStorage").playerserver.charcustomizer.saveapply:FireServer()
+end)
+Section:NewButton("M110 (SNIPER)", "ButtonInfo", function()
+
+local args = {
+    [1] = "M110",
+}
+
+game:GetService("ReplicatedStorage").playerserver.charcustomizer.changespecwep:FireServer(unpack(args))
+wait(1)
+
+game:GetService("ReplicatedStorage").playerserver.charcustomizer.saveapply:FireServer()
+end)
+Section:NewButton("HK416", "ButtonInfo", function()
+
+local args = {
+    [1] = "HK416",
+}
+
+game:GetService("ReplicatedStorage").playerserver.charcustomizer.changespecwep:FireServer(unpack(args))
+wait(1)
+
+game:GetService("ReplicatedStorage").playerserver.charcustomizer.saveapply:FireServer()
+end)
+Section:NewButton("CAR15", "ButtonInfo", function()
+
+local args = {
+    [1] = "CAR15",
+}
+
+game:GetService("ReplicatedStorage").playerserver.charcustomizer.changespecwep:FireServer(unpack(args))
+wait(1)
+
+game:GetService("ReplicatedStorage").playerserver.charcustomizer.saveapply:FireServer()
+end)
+
